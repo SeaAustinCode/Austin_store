@@ -1,0 +1,31 @@
+.home {
+    display: flex;
+}
+
+.productContainer {
+    display: flex;
+    width: 78%;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.filter {
+    background-color: darkgrey;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin: 10px;
+    height: 86vh;
+}
+
+.filter > span {/* This targets every single span component within the filter component */
+    padding-bottom: 20px;
+}
+
+.title {
+    font-size: 30px;
+}
+
