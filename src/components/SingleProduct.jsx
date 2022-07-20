@@ -18,7 +18,7 @@ const SingleProduct = ({ prod }) => {
           <Card.Title>{prod.name}</Card.Title>
           <Card.Subtitle style={{ paddingBottom: 10 }}>
             <span>$ {prod.price.split(".")[0]}</span>
-            {prod.fastDelivery ? (
+            {prod.nextDayDelivery ? (
               <div>Next Day Delivery</div>
             ) : (
               <div>Standard Shipping</div>

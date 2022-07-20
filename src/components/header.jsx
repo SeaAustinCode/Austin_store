@@ -9,7 +9,8 @@ const header = () => {
 
     const {
         state: { cart },
-        dispatch //this is used to remove item from the cart 
+        dispatch, //this is used to remove item from the cart
+        productDispatch
     } = CartState();
 
     return (
@@ -19,7 +20,13 @@ const header = () => {
                     <Link to="/">Shopping Cart</Link>
                 </Navbar.Brand>
                 <Navbar.Text className='search'>
-                    <FormControl className="m-auto" style={{ width: 500 }} placeholder="Search for a product" />
+                    <FormControl className="m-auto" type="search" style={{ width: 500 }} placeholder="Search for a product" 
+                    onChange={(e) => {
+                        productDispatch({
+                            type: "FILTER_BY_SEARCH",
+                            payload: e.target.value,
+                        });
+                    }}/>
                 </Navbar.Text>
                 <Nav>
                     <Dropdown alignright="true"> {/* message that comes out of the shopping cart is aligned to the right */}
