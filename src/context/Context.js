@@ -8,7 +8,7 @@ faker.seed(95); // this will make it so that the data won't change every time it
 
 const Context = ({ children }) => {
 
-    const stockArray = [3, 5, 6, 0, 2]
+    const stockArray = [3, 5, 6, 0, 2, 10]
     const ratingsArray = [1, 2, 3, 4, 5]
 
     const products = [...Array(20)].map(() => ({
