@@ -1,6 +1,13 @@
 .home {
     display: flex;
+    background-color: #c4ced4;
 }
+
+.banner {
+    background-color: #005c5c;
+    height: 80px;
+}
+
 
 .header {
     display: block;
@@ -18,8 +25,8 @@
 }
 
 .filter {
-    background-color: darkgrey;
-    color: white;
+    background-color:  #0c2c56;
+    color: #c4ced4;
     padding: 20px;
     display: flex;
     flex-direction: column;
