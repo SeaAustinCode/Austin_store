@@ -4,7 +4,7 @@ import { CartState } from '../context/context';
 import { Button, Row, Col, Image } from 'react-bootstrap';
 import Rating from './Rating';
 import { AiFillDelete } from 'react-icons/ai';
-// import { PayPalButtons } from '@paypal/react-paypal-js';
+import { PayPalButtons, PayPalScriptProvider } from '@paypal/react-paypal-js';
 
 const Cart = () => {
   const {
@@ -59,7 +59,9 @@ const Cart = () => {
       <div className="filter summary">
         <span className="title"> Subtotal ({cart.length}) items</span>
         <span style={{ fontWeight: 700, fontSize: 20 }}>Total: $ {total}</span>
-        {/* <PayPalButtons></PayPalButtons> */}
+        <PayPalScriptProvider options={{ "client-id": "test" }}>
+          <PayPalButtons style={{ layout: "horizontal" }} />
+        </PayPalScriptProvider>
         <Button type="button" disabled={cart.length === 0}
         onClick= { () => {setCheckout(true)
         }}>
