@@ -16,7 +16,7 @@ const header = () => {
     return (
         <Navbar className="banner">
             <Container>
-                <Navbar.Brand>
+                <Navbar.Brand className="navbar-main-title">
                     <Link to="/">Shopping Cart</Link>
                 </Navbar.Brand>
                 <Navbar.Text className='search'>
@@ -30,9 +30,9 @@ const header = () => {
                 </Navbar.Text>
                 <Nav>
                     <Dropdown alignright="true"> {/* message that comes out of the shopping cart is aligned to the right */}
-                        <Dropdown.Toggle variant="success">
-                            <FaShoppingCart color="white" fontSize="25px" />
-                            <Badge bg='success'>{cart.length}</Badge>
+                        <Dropdown.Toggle>
+                            <FaShoppingCart color="#c4ced4" fontSize="25px" />
+                            <Badge bg='#c4ced4'>{cart.length}</Badge>
                         </Dropdown.Toggle>
                         <Dropdown.Menu style={{ minWidth: 370 }}>
 

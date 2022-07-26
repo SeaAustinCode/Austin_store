@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo&family=Ubuntu&display=swap');
+
 .home {
     display: flex;
     background-color: #c4ced4;
@@ -6,6 +8,10 @@
 .banner {
     background-color: #005c5c;
     height: 80px;
+}
+
+.navbar-main-title {
+    font-family: "Chivo";
 }
 
 
@@ -25,7 +31,7 @@
 }
 
 .filter {
-    background-color:  #0c2c56;
+    background-color: #0c2c56;
     color: #c4ced4;
     padding: 20px;
     display: flex;
@@ -33,19 +39,23 @@
     width: 20%;
     margin: 10px;
     height: 86vh;
+    font-family: "Chivo";
 }
 
-.filter > span {/* This targets every single span component within the filter component */
+.filter>span {
+    /* This targets every single span component within the filter component */
     padding-bottom: 20px;
 }
 
 .title {
     font-size: 30px;
+    font-family: "Chivo";
 }
 
 .products {
     width: 30%;
     margin: 10px;
+    font-family: "Chivo";
 }
 
 .cartItem {
@@ -70,7 +80,7 @@
     flex-direction: column;
 }
 
-.summary { 
+.summary {
     width: 30%;
 }
 
@@ -81,7 +91,7 @@
         margin: 5px;
     }
 
-    .filter > span {
+    .filter>span {
         font-size: 10px;
     }
 
@@ -102,4 +112,3 @@
         width: 100%;
     }
 }
-
