@@ -4,7 +4,7 @@ import { faker } from '@faker-js/faker';
 import { cartReducer, productReducer } from './Reducers';
 
 const Cart = createContext();
-faker.seed(95); // this will make it so that the data won't change every time it is called refreshed etc. 
+faker.seed(100); // this will make it so that the data won't change every time it is called refreshed etc. Pictures will still change
 
 const Context = ({ children }) => {
 

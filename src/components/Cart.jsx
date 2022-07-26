@@ -4,6 +4,7 @@ import { CartState } from '../context/context';
 import { Button, Row, Col, Image } from 'react-bootstrap';
 import Rating from './Rating';
 import { AiFillDelete } from 'react-icons/ai';
+// import { PayPalButtons } from '@paypal/react-paypal-js';
 
 const Cart = () => {
   const {
@@ -16,6 +17,8 @@ const Cart = () => {
   useEffect(() => {
     setTotal(cart.reduce((acc, current) => acc + Number(current.price) * current.qty, 0));
   }, [cart]);
+
+  const [ checkout, setCheckout] = useState(false);
 
 
   return (
@@ -56,7 +59,10 @@ const Cart = () => {
       <div className="filter summary">
         <span className="title"> Subtotal ({cart.length}) items</span>
         <span style={{ fontWeight: 700, fontSize: 20 }}>Total: $ {total}</span>
-        <Button type="button" disabled={cart.length === 0}>
+        {/* <PayPalButtons></PayPalButtons> */}
+        <Button type="button" disabled={cart.length === 0}
+        onClick= { () => {setCheckout(true)
+        }}>
           Proceed to Checkout
         </Button>
       </div>

@@ -33,12 +33,13 @@
 .filter {
     background-color: #0c2c56;
     color: #c4ced4;
-    padding: 20px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     width: 20%;
-    margin: 10px;
-    height: 86vh;
+    margin-top: 33px;
+    margin-left: 40px;
+    height: 30vh;
     font-family: "Chivo";
 }
 
