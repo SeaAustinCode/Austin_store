@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Chivo&family=Ubuntu&display=swap');
 
+.storeName {
+    font-size: xx-large;
+}
+
 .home {
     display: flex;
     background-color: #c4ced4;
@@ -28,6 +32,7 @@
     padding: 20px;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-top: 12px;
 }
 
 .filter {
@@ -41,11 +46,13 @@
     margin-left: 40px;
     height: 30vh;
     font-family: "Chivo";
+    margin-right: 60px;
 }
 
 .filter>span {
     /* This targets every single span component within the filter component */
     padding-bottom: 20px;
+    
 }
 
 .title {
@@ -83,6 +90,9 @@
 
 .summary {
     width: 30%;
+    height: auto;
+    border-radius: 5%;
+    padding:20px
 }
 
 @media (max-width: 771px) {

@@ -17,7 +17,7 @@ const header = () => {
         <Navbar className="banner">
             <Container>
                 <Navbar.Brand className="navbar-main-title">
-                    <Link to="/">Shopping Cart</Link>
+                    <Link className="storeName"to="/">Welcome to Austin's Store!</Link>
                 </Navbar.Brand>
                 <Navbar.Text className='search'>
                     <FormControl className="m-auto" type="search" style={{ width: 500 }} placeholder="Search for a product" 

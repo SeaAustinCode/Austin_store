@@ -60,7 +60,9 @@ const Cart = () => {
         <span className="title"> Subtotal ({cart.length}) items</span>
         <span style={{ fontWeight: 700, fontSize: 20 }}>Total: $ {total}</span>
         <PayPalScriptProvider options={{ "client-id": "test" }}>
-          <PayPalButtons style={{ layout: "horizontal" }} />
+          <PayPalButtons style={{ layout: "vertical" }} disabled={cart.length === 0}
+        onClick= { () => {setCheckout(true)
+        }}/>
         </PayPalScriptProvider>
         <Button type="button" disabled={cart.length === 0}
         onClick= { () => {setCheckout(true)
