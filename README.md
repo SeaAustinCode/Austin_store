@@ -11,7 +11,7 @@ I utilized Faker API to create all of the products and their details. This drast
 I used the colors of my favorite baseball team to help quickly style the website and imported a font from google to help make the website feel a little more clean. 
 
 Preview: <br>
-<img src="https://i.imgur.com/HiENHt1.png" />
+<img src="https://i.imgur.com/axm3J2H.png" />
 <img src="https://i.imgur.com/YNaafW4.png" /> <br><br>
 
 Thank you for taking some time to look over my project, if you have any questions please feel free to contact me at the email below and, I hope you have a great day!
