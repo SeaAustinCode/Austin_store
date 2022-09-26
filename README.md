@@ -1,4 +1,6 @@
-React, Node.js, Context/Paypal API, Bootstrap, HTML5, CSS
+
+Tech Stack: 
+React | Node.js | Context API | Faker API | Paypal API | Bootstrap | HTML5 | CSS
 
 The main function of this project allows users to filter through products using various search categories such as price, number of stars, speed of delivery and through the use of a searchbar. Users can then manage their shopping cart and use PayPal, Venmo, PayLater or a credit/debit card to checkout. 
 
